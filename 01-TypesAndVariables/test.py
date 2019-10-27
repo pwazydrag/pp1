@@ -38,4 +38,3 @@ print("")
     
 for i in range(0, tablica[4]):
     print("*", end=" ")
-print("")
