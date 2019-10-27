@@ -55,11 +55,11 @@ else:
     print("Punkt znajduje się w czwartej ćwiartce.")
 
 #14
-#wiekpsa=float(input("Wprowadź wiek psa: "))
-#if wiekpsa<=2:
-#    print(f"Wiek psa psich latach to: {10.5*wiekpsa}")
-#else:
-#    print(f"Wiek psa psich latach to: {(2*10.5)+wiekpsa-}")
+wiekpsa=float(input("Wprowadź wiek psa: "))
+if wiekpsa<=2:
+    print(f"Wiek psa psich latach to: {10.5*wiekpsa}")
+else:
+    print(f"Wiek psa psich latach to: {21+(wiekpsa-2)*4}")
 
 #15
 xxx=int(input("Podaj liczbę do tabliczki mnożenia: "))
