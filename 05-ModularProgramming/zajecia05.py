@@ -39,6 +39,8 @@ import csv
 with open('employees.csv', newline='') as f:
     reader = csv.reader(f)
     a=-1
+    suma=0
+    liczba=0
     for row in reader:
         a += 1
         if a == 0:
@@ -48,5 +50,7 @@ with open('employees.csv', newline='') as f:
         else:
             print(a,end="\t")
             print(row[1].upper(),row[0],row[2],row[3],sep="\t\t")
-        
+            suma += int(row[2])
+            liczba += 1
+    print(suma/liczba)
 #6b DO ZROBIENIA
