@@ -2,7 +2,7 @@
 import statistics
 import collections
 import random
-tab=[2, 3, 5, 2, 9, 8, 1, 3, 9, 1, 1, 4, 7, 7, 1, 4]
+tab=[4,4,4,4,4,1,1,1,1,1,2,2,2,2,2,3,7]
 
 def mediana(tablica):
     tablica.sort()
