@@ -1,4 +1,4 @@
-from message import Message
+from message9 import Message
 class EMAIL(Message):
     def __init__(self, adresnadawcy, adresodbiorcy, temat):
         self.adresnadawcy=adresnadawcy

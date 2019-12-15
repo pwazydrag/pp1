@@ -1,4 +1,4 @@
-from message import Message
+from message9 import Message
 class SMS(Message):
     def __init__(self, nrtel, nadawca, odbiorca):
         self.nrtel=nrtel
