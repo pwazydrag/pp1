@@ -4,9 +4,11 @@ class Pola():
         import math
         pole=math.pi*r**2
         return pole
+    @staticmethod
     def poleProstokata(a,b):
         pole=a*b
         return pole
+    @staticmethod
     def poleTrojkata(a,h):
         pole=(a*h)/2
         return pole

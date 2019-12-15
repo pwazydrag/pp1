@@ -1,4 +1,4 @@
-from point import Point
+from point10 import Point
 a=Point(2,2)
 b=Point(4,3)
 c=Point(0,0)
