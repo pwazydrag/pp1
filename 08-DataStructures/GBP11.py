@@ -25,3 +25,9 @@ GBP = {
         }
     ]
 }
+print("Data", "\t\t", "Kurs")
+print("========================")
+pom=-1
+for m in range (0, len(GBP["rates"])):
+    pom+=1
+    print(GBP["rates"][pom]["effectiveDate"], "\t\t", GBP["rates"][pom]["mid"])
