@@ -1,0 +1,15 @@
+{
+    "procesor": "AMD Ryzen 5",
+    "zasilaczV": 500,
+    "panel_gorny": [
+        "USB 3.1 Gen.1",
+        "wejscie mikrofonowe",
+        "wyjscie s\u0142uchawkowe"
+    ],
+    "gwarancja": true,
+    "porty_wewnetrzne": {
+        "PCI-ex16": 1,
+        "SataIII": 6,
+        "PCI-ex1": 3
+    }
+}
