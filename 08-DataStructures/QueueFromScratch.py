@@ -8,10 +8,11 @@ class Element:
         return f'{self.value}'
     
     
-class Stack:
+class Queue:
     
     def __init__(self):
         self.top = None
+        self.bottom= None
         
     def pop(self):
         if not self.is_empty():
@@ -21,48 +22,47 @@ class Stack:
         return None
         
     def push(self,element):
+        if self.is_empty():
+            self.bottom=element
         element.next = self.top
         self.top = element
         
     def is_empty(self):
-        return self.top == None
+        return self.bottom == None
     
     def __str__(self):
-        stack = ''
+        queue = ''
         element = self.top
         while element != None:
-            stack += str(element)+'\n'
+            queue += str(element)+'\n'
             element = element.next
-        return stack    
+        return queue    
 
 
 # utwórz stos
-stack = Stack()
+queue = Queue()
 
 # dodaj elementy na stos
-print('Dodaję na stos')
-print()
+print('Dodaję do kolejki')
 element = Element(5)
 print(element)
-print(stack.top)
-stack.push(element)
+queue.push(element)
 
 element = Element(7)
 print(element)
-print(stack.top)
-stack.push(element)
+queue.push(element)
 
 element = Element(9)
 print(element)
-print(stack.top)
-stack.push(element)
+queue.push(element)
 
 # pokaż stos
-print(f'\nZawartość stosu\n{stack}')
+print(f'\nZawartość kolejki\n{queue}')
 
 # zdejmij ze stosu
-print('Zdejmuję ze stosu')
-print(stack.pop())
+print('Zdejmuję z kolejki')
+print(queue.pop())
 
 # pokaż stos
-print(f'\nZawartość stosu\n{stack}')
+print(f'\nZawartość kolejki\n{queue}')
+
