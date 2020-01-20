@@ -27,7 +27,24 @@ class TestSumEven(unittest.TestCase):
         n = 2
         result = sum_even(m,n)
         self.assertEqual(result, 0)
+        
+    def test_sum_even_neven(self):
+        m=2
+        n=6
+        result = sum_even(m,n)
+        self.assertEqual(result, 12)
+        
+    def test_sum_even_frommnegative(self):
+        m=-2
+        n=4
+        result = sum_even(m,n)
+        self.assertEqual(result, 6)
 
+    def test_sum_even_floats(self):
+        self.assertRaises(TypeError, sum_even, 2.1, 1.2)
+    
+    def test_sum_even_strings(self):
+        self.assertRaises(TypeError, sum_even, "j", "d")
 
 
 if __name__ == '__main__':
